@@ -1,0 +1,340 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #007bff;
+    padding: 1rem 0;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #dcdcdc;
+}
+.navbar ul li a img {
+    width: 1.5rem; /* Ajusta el tamaño del icono */
+    height: 1.5rem;
+}
+/* Sección de Ofertas de Empleo */
+.job-offers {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.job-offers h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.offer-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.offer {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.offer h3 {
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.offer p {
+    margin-bottom: 0.5rem;
+}
+
+.offer button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.offer button:hover {
+    background-color: #218838;
+}
+/* Modal estilo avanzado */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    position: relative;
+}
+
+.modal-content h3 {
+    color: #007bff;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.modal-content label {
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+    display: block;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="file"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.modal-content button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Botón de cierre */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #ff5a5a;
+}
+/* Formulario de Ofertas de empleo */
+.oferta-form {
+    background-color: #e9ecef;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.oferta-form h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.oferta-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.oferta-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.oferta-form input[type="text"],
+.oferta-form input[type="text"],
+.oferta-form input[type="text"],
+.oferta-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.oferta-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.oferta-form button:hover {
+    background-color: #0056b3;
+}
+/* Pie de página */
+/* Estilos generales para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Contenedor principal del footer */
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  /* Secciones del footer */
+  .footer-section {
+    flex: 1;
+    min-width: 220px;
+    margin: 10px;
+  }
+  
+  /* Títulos de las secciones */
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #ff5722; /* Color de acento */
+  }
+  
+  /* Enlaces dentro del footer */
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ff5722; /* Color de acento al pasar el puntero */
+  }
+  
+  /* Formulario de suscripción */
+  .footer-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-section input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .footer-section button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-section button:hover {
+    background-color: #e64a19; /* Cambio de color al pasar el puntero */
+  }
+  
+  /* Sección del pie de página */
+  .footer-bottom {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom a {
+    color: #ff5722;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+
+/* Responsividad */
+@media (max-width: 768px) {
+    
+    .navbar ul {
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+  
+}

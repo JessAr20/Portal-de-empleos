@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas de Empleo - Portal Avanzado de Empleos</title>
+    <link rel="stylesheet" href="ofertas.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html"><img src="imagenes/chimenea-de-la-casa.png" alt="Empresas Icono">Inicio</a></li>
+                <li><a href="empresas.html"><img src="imagenes/edificio.png" alt="Empresas Icono">Empresas</a></li>
+                <li><a href="estudiantes.html"><img src="imagenes/usuario-graduado.png" alt="Empresas Icono">Estudiantes</a></li>
+                <li><a href="documentos.html"><img src="imagenes/documento-firmado.png" alt="Empresas Icono">Documentos</a></li>
+                <li><a href="blog.html"><img src="imagenes/texto-del-blog.png" alt="Empresas Icono">Blog</a></li>
+                <li><a href="perfil.html"><img src="imagenes/circulo-de-usuario (1).png" alt="Empresas Icono">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="job-offers">
+        <h2>Ofertas de Empleo</h2>
+        <div class="offer-list">
+            <div class="offer">
+                <h3>Desarrollador Web Junior</h3>
+                <p><strong>Empresa:</strong> Microsoft</p>
+                <p><strong>Descripción:</strong> Ayuda en la creación de sitios web y actualizar las aplicaciones web existentes utilizando lenguajes de programación.</p>
+                <button onclick="openModal()">Postular</button>
+            </div>
+            <div class="offer">
+                <h3>Diseñador Gráfico Senior</h3>
+                <p><strong>Empresa:</strong> Oracle</p>
+                <p><strong>Descripción:</strong> Liderar proyectos de diseño desde su concepción hasta su implementación final.</p>
+                <button onclick="openModal()">Postular</button>
+            </div>
+        </div>
+        <!-- Modal de Aplicación -->
+         <div id="applyModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3>Postulación para el Puesto</h3>
+                <form id="applyForm">
+                    <label for="applicant-name">Nombre:</label>
+                    <input type="text" id="applicant-name" required>
+                    <label for="applicant-email">Correo Electrónico:</label>
+                    <input type="email" id="applicant-email" required>
+                    <label for="resume-upload">Subir Currículum:</label>
+                    <input type="file" id="resume-upload" accept=".pdf,.doc,.docx" required>
+                    <button type="submit">Enviar Postulación</button>
+                </form>
+            </div>
+        </div>
+        <div class="oferta-form">
+            <h3>Publicar oferta de empleo</h3>
+            <form action="#">
+                <label for="company-name">Titulo:</label>
+                <input type="text" id="company-name" name="company_name" required>
+
+                <label for="company-email">Empresa:</label>
+                <input type="text" id="company-email" name="company_email" required>
+
+                <label for="company-logo">Descripcion:</label>
+                <input type="text" id="company-logo" name="company_logo" required accept="image/*">
+
+                <button type="submit">Publicar</button>
+            </form>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Sobre Nosotros</h3>
+            <ul>
+              <li><a href="/about-us">Quiénes somos</a></li>
+              <li><a href="/terms">Términos y condiciones</a></li>
+              <li><a href="/privacy-policy">Política de privacidad</a></li>
+              <li><a href="/faq">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Enlaces útiles</h3>
+            <ul>
+              <li><a href="/companies">Empresas</a></li>
+              <li><a href="/job-seekers">Candidatos</a></li>
+              <li><a href="/job-posting">Publicar empleo</a></li>
+              <li><a href="/contact">Contacto</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Redes Sociales</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/empleos">Facebook</a></li>
+              <li><a href="https://twitter.com/empleos">Twitter</a></li>
+              <li><a href="https://www.linkedin.com/company/empleos">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/empleos">Instagram</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Suscríbete a nuestro boletín</h3>
+            <form action="/subscribe" method="POST">
+              <input type="email" name="email" placeholder="Tu correo electrónico" required>
+              <button type="submit">Suscribirse</button>
+            </form>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+            <p>&copy; 2024 Portal de Empleos. Todos los derechos reservados.</p>
+          <p>Desarrollado por <a href="https://www.tudesarrollador.com">TuDesarrollador.com</a></p>
+          <p>Integrantes del quipo de trabajo: </p>
+          <p>Jesus Manuel Arias Cruz. </p>
+          <p>Jose Jesus De La Cruz Jimenez.</p> 
+          <p>Ana Cristel Gomez Mendez</p>
+        </div>
+      </footer>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
